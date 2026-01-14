@@ -1,0 +1,19 @@
+# dependencies
+node_modules
+
+# next.js build
+.next
+out
+
+# env files
+.env
+.env.local
+
+# typescript build
+tsconfig.tsbuildinfo
+
+# editor
+.vscode
+
+desktop.ini
+
