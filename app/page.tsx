@@ -554,7 +554,7 @@ export default function Portfolio() {
               {
                 degree: "B.E – Electrical & Electronics Engineering",
                 institution: "Sri Ramakrishna Engineering College",
-                score: "CGPA: 8.33",
+                score: "CGPA: 8.27",
                 period: "2023 – 2027",
                 icon: GraduationCap,
               },
@@ -1062,7 +1062,7 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto">
           <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent mb-8" />
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground">© 2025 Jeevith Pranav P. All rights reserved.</p>
+            <p className="text-sm text-muted-foreground">© 2026 Jeevith Pranav P. All rights reserved.</p>
             <div className="flex gap-6">
               <a
                 href="https://www.linkedin.com/in/jeevith-pranav-7a6043290/"
