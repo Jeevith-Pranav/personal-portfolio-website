@@ -195,9 +195,9 @@ export default function Portfolio() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting && entry.target.id === "stats") {
-          animateCounter(6, setProjectCount)
+          animateCounter(8, setProjectCount)
           animateCounter(20, setSkillCount)
-          animateCounter(15, setCertCount)
+          animateCounter(18, setCertCount)
         }
       })
     })
@@ -250,6 +250,7 @@ export default function Portfolio() {
   ]
 
   const projects = [
+
     {
       title: "Prompt to Action",
       tech: ["AI", "IoT", "Microcontroller"],
@@ -259,44 +260,59 @@ export default function Portfolio() {
       icon: Brain,
     },
     {
+      title: "Hybrid Supercapacitor–Battery Energy Storage",
+      tech: ["ESP32", "Arduino IDE", "IoT", "INA226"],
+      description: "Hybrid energy storage system achieving 40% efficiency improvement by combining batteries and supercapacitors to optimize performance and reduce stress",
+      link: null,
+      image: "/supercapacitor-battery-storage.png",
+      icon: Zap,
+    },
+
+    {
+      title: "Connected Vehicle",
+      tech: ["ESP32", "Arduino IDE", "IoT", "WiFi"],
+      description: "EV charging station auto-booking system with State of Charge tracking and nearby charging slot prediction",
+      link: "https://youtu.be/3CKnwdY5Yxw",
+      image: "/electric-vehicle-charging-system.jpg",
+      icon: Cpu,
+    },
+    
+    {
+      title: "BLDC Motor Design",
+      tech: ["ANSYS Maxwell", "RMxprt", "Simulation"],
+      description: "Optimized motor performance and thermal stability by reducing electromagnetic losses",
+      link: null,
+      image: "/bldc-motor-design-simulation.jpg",
+      icon: Zap,
+    },
+
+
+
+    {
+      title: "REWOP 2K25 Portal",
+      tech: ["HTML", "CSS", "JavaScript", "Google Forms"],
+      description: "Responsive event registration portal for 200+ participants at national-level technical symposium",
+      link: "https://rewopsrec.in",
+      image: "/event-registration-portal.jpg",
+      icon: Users,
+    },
+
+    {
+      title: "Project SOLVE",
+      tech: ["IoT", "Solar", "Automation", "Arduino"],
+      description: "Solar-powered IoT-enabled public sanitation system reducing manual maintenance effort by 30%",
+      link: null,
+      image: "/solar-iot-lavatory-system.jpg",
+      icon: Lightbulb,
+    },
+
+      {
       title: "Vision Guard",
       tech: ["Python", "YOLOv8", "AI"],
       description: "AI-powered PPE detection with 24/7 offline operation",
       link: "https://youtu.be/zSVimLt4yWg",
       image: "/ppe-detection-safety-monitoring.jpg",
       icon: Shield,
-    },
-    {
-      title: "REWOP 2K25 Portal",
-      tech: ["HTML", "CSS", "JavaScript"],
-      description: "Responsive event registration website",
-      link: "https://rewopsrec.in",
-      image: "/event-registration-portal.jpg",
-      icon: Users,
-    },
-    {
-      title: "BLDC Motor Design",
-      tech: ["ANSYS Maxwell", "Simulation"],
-      description: "Optimized motor performance and thermal stability",
-      link: null,
-      image: "/bldc-motor-design-simulation.jpg",
-      icon: Zap,
-    },
-    {
-      title: "Connected Vehicle",
-      tech: ["C", "IoT", "TFT Display"],
-      description: "EV charging station auto-booking system",
-      link: "https://youtu.be/3CKnwdY5Yxw",
-      image: "/electric-vehicle-charging-system.jpg",
-      icon: Cpu,
-    },
-    {
-      title: "Project SOLVE",
-      tech: ["IoT", "Solar", "Automation"],
-      description: "Solar lavatory with IoT monitoring",
-      link: null,
-      image: "/solar-iot-lavatory-system.jpg",
-      icon: Lightbulb,
     },
   ]
 
@@ -664,6 +680,14 @@ export default function Portfolio() {
                 </div>
                 <span className="skill-tooltip-mobile md:skill-tooltip">JavaScript</span>
               </div>
+
+              {/* SQL */}
+              <div className="skill-icon-card-mobile md:skill-icon-card group active:scale-95">
+                <div className="skill-icon-wrapper-mobile md:skill-icon-wrapper">
+                  <i className="devicon-postgresql-plain colored text-5xl md:text-7xl group-hover:scale-125 md:group-hover:rotate-12 transition-all duration-500"></i>
+                </div>
+                <span className="skill-tooltip-mobile md:skill-tooltip">SQL</span>
+              </div>
             </div>
           </div>
 
@@ -727,6 +751,30 @@ export default function Portfolio() {
                   </div>
                   <span className="font-semibold text-xs md:text-sm group-hover:text-blue-500 transition-colors">
                     ANSYS Maxwell
+                  </span>
+                </div>
+              </Card>
+
+              {/* STM32Cube */}
+              <Card className="glass-card p-4 md:p-6 hover-lift-mobile md:hover-lift-intense group cursor-pointer text-center active:scale-95">
+                <div className="flex flex-col items-center gap-2 md:gap-3">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl md:rounded-2xl flex items-center justify-center text-white font-bold text-xs md:text-sm group-hover:scale-110 md:group-hover:scale-125 md:group-hover:rotate-12 transition-all duration-500 shadow-lg group-hover:shadow-cyan-500/50">
+                    STM32
+                  </div>
+                  <span className="font-semibold text-xs md:text-sm group-hover:text-cyan-400 transition-colors">
+                    STM32Cube
+                  </span>
+                </div>
+              </Card>
+
+              {/* KeilμVision */}
+              <Card className="glass-card p-4 md:p-6 hover-lift-mobile md:hover-lift-intense group cursor-pointer text-center active:scale-95">
+                <div className="flex flex-col items-center gap-2 md:gap-3">
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl md:rounded-2xl flex items-center justify-center text-white font-bold text-xs md:text-sm group-hover:scale-110 md:group-hover:scale-125 md:group-hover:rotate-12 transition-all duration-500 shadow-lg group-hover:shadow-green-500/50">
+                    Keil
+                  </div>
+                  <span className="font-semibold text-xs md:text-sm group-hover:text-green-400 transition-colors">
+                    Keil μVision
                   </span>
                 </div>
               </Card>
@@ -940,11 +988,17 @@ export default function Portfolio() {
               </div>
               <div className="space-y-3">
                 {[
-                  { title: "2nd Prize – AUTOwn'24", org: "BITS Pilani", icon: Award },
                   { title: "1st Prize – Best Design Challenge 6.0", org: "SREC CoIn", icon: Star },
-                  { title: "2nd Prize – Zonal Badminton", org: "Anna University", icon: Target },
+                  { title: "2nd Prize – AUTOwn'24", org: "BITS Pilani", icon: Award },
+                  { title: "2nd Prize – Texperia'26", org: "SNS", icon: Award },
+                  { title: "2nd Prize – Code Baton Competition", org: "C3, SREC", icon: Code },
+                  { title: "2nd Prize – Circuit Debugging Competition", org: "EEETA, SREC", icon: Code },
+                  { title: "2nd Prize – Zonal Badminton Championship", org: "Anna University (2025)", icon: Target },
+                  { title: "Shortlisted – Smart India Hackathon", org: "Top 50 teams (2024, 2025)", icon: Rocket },
+                  { title: "Shortlisted – Virtual Proof of Concept", org: "Techgium 9th Edition", icon: Lightbulb },
+                  { title: "Shortlisted – Visteon Scholar Program", org: "Visteon", icon: Star },
                   { title: "Joint Secretary – EEETA", org: "2025–2026", icon: Users },
-                  { title: "Innovation Ambassador", org: "SREC CoIn", icon: Lightbulb },
+                  { title: "Innovation Ambassador", org: "CoIn (2024–2026)", icon: Lightbulb },
                 ].map((achievement, index) => (
                   <div
                     key={index}
@@ -969,15 +1023,19 @@ export default function Portfolio() {
               </div>
               <div className="space-y-2">
                 {[
-                  "NPTEL: IoT",
-                  "NPTEL: Smart Grid",
-                  "SkillRack: C, Python",
-                  "Infosys: Python, HTML, JS",
-                  "Great Learning: Cyber Security",
-                  "MATLAB: ONRAMP, Simulink",
-                  "ANSYS Maxwell Workshop",
-                  "ModelSim Workshop (NIT Trichy)",
-                  "150+ LeetCode Problems",
+                  "SkillRack – C and Python Programming",
+                  "HackerRank – Problem Solving in C (Basic & Intermediate)",
+                  "Infosys Springboard – Python, HTML, JavaScript",
+                  "MATLAB – ONRAMP & SIMULINK",
+                  "Great Learning – Cyber Security and Ethical Hacking",
+                  "NPTEL – Introduction to Internet of Things",
+                  "NPTEL – Smart Grid: Basics to Advanced Technologies",
+                  "NPTEL – Enclosure Design of Electronics Equipment",
+                  "NPTEL – Understanding Incubation and Entrepreneurship",
+                  "ANSYS Maxwell – Hands-on Workshop",
+                  "Power BI Training – ICT Academy",
+                  "Snap on Chip – Image Processing Workshop (NIT Trichy PROBE)",
+                  "300+ LeetCode Problems Solved",
                 ].map((cert, index) => (
                   <div
                     key={index}
