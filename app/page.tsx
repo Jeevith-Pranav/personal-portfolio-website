@@ -263,7 +263,7 @@ export default function Portfolio() {
       title: "Hybrid Supercapacitor–Battery Energy Storage",
       tech: ["ESP32", "Arduino IDE", "IoT", "INA226"],
       description: "Hybrid energy storage system achieving 40% efficiency improvement by combining batteries and supercapacitors to optimize performance and reduce stress",
-      link: null,
+      link: "https://drive.google.com/file/d/1BdePpaumKQsyglS4Y9qyJNA5PrTO-YsY/view?usp=drivesdk",
       image: "/supercapacitor-battery-storage.png",
       icon: Zap,
     },
