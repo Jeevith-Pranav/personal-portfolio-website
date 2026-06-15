@@ -195,7 +195,7 @@ export default function Portfolio() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting && entry.target.id === "stats") {
-          animateCounter(7, setProjectCount)
+          animateCounter(8, setProjectCount)
           animateCounter(20, setSkillCount)
           animateCounter(18, setCertCount)
         }
@@ -265,6 +265,14 @@ export default function Portfolio() {
       link: "https://youtu.be/vDmGV_lc8pI",
       image: "/ai-microcontroller-prompt-interface.jpg",
       icon: Brain,
+    },
+    {
+      title: "Vision Guard",
+      tech: ["Python", "YOLOv8", "AI"],
+      description: "AI-powered PPE detection with 24/7 offline operation",
+      link: "https://youtu.be/zSVimLt4yWg",
+      image: "/ppe-detection-safety-monitoring.jpg",
+      icon: Shield,
     },
     {
       title: "Connected Vehicle",
