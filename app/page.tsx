@@ -292,7 +292,7 @@ export default function Portfolio() {
       title: "REWOP 2K25 Portal",
       tech: ["HTML", "CSS", "JavaScript", "Google Forms"],
       description: "Responsive event registration portal for 200+ participants at national-level technical symposium",
-      link: "https://rewopsrec.in",
+      link: "https://rewopsrec.vercel.app",
       image: "/event-registration-portal.jpg",
       icon: Users,
     },
