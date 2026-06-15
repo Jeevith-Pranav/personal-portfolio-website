@@ -250,14 +250,7 @@ export default function Portfolio() {
   ]
 
   const projects = [
-    {
-      title: "Hybrid Supercapacitor–Battery Energy Storage",
-      tech: ["ESP32", "Arduino IDE", "IoT", "INA226"],
-      description: "Hybrid energy storage system achieving 40% efficiency improvement by combining batteries and supercapacitors to optimize performance and reduce stress",
-      link: null,
-      image: "/supercapacitor-battery-storage.png",
-      icon: Zap,
-    },
+
     {
       title: "Prompt to Action",
       tech: ["AI", "IoT", "Microcontroller"],
@@ -267,13 +260,14 @@ export default function Portfolio() {
       icon: Brain,
     },
     {
-      title: "Vision Guard",
-      tech: ["Python", "YOLOv8", "AI"],
-      description: "AI-powered PPE detection with 24/7 offline operation",
-      link: "https://youtu.be/zSVimLt4yWg",
-      image: "/ppe-detection-safety-monitoring.jpg",
-      icon: Shield,
+      title: "Hybrid Supercapacitor–Battery Energy Storage",
+      tech: ["ESP32", "Arduino IDE", "IoT", "INA226"],
+      description: "Hybrid energy storage system achieving 40% efficiency improvement by combining batteries and supercapacitors to optimize performance and reduce stress",
+      link: null,
+      image: "/supercapacitor-battery-storage.png",
+      icon: Zap,
     },
+
     {
       title: "Connected Vehicle",
       tech: ["ESP32", "Arduino IDE", "IoT", "WiFi"],
@@ -282,14 +276,7 @@ export default function Portfolio() {
       image: "/electric-vehicle-charging-system.jpg",
       icon: Cpu,
     },
-    {
-      title: "REWOP 2K25 Portal",
-      tech: ["HTML", "CSS", "JavaScript", "Google Forms"],
-      description: "Responsive event registration portal for 200+ participants at national-level technical symposium",
-      link: "https://rewopsrec.in",
-      image: "/event-registration-portal.jpg",
-      icon: Users,
-    },
+    
     {
       title: "BLDC Motor Design",
       tech: ["ANSYS Maxwell", "RMxprt", "Simulation"],
@@ -298,6 +285,18 @@ export default function Portfolio() {
       image: "/bldc-motor-design-simulation.jpg",
       icon: Zap,
     },
+
+
+
+    {
+      title: "REWOP 2K25 Portal",
+      tech: ["HTML", "CSS", "JavaScript", "Google Forms"],
+      description: "Responsive event registration portal for 200+ participants at national-level technical symposium",
+      link: "https://rewopsrec.in",
+      image: "/event-registration-portal.jpg",
+      icon: Users,
+    },
+
     {
       title: "Project SOLVE",
       tech: ["IoT", "Solar", "Automation", "Arduino"],
@@ -305,6 +304,15 @@ export default function Portfolio() {
       link: null,
       image: "/solar-iot-lavatory-system.jpg",
       icon: Lightbulb,
+    },
+
+      {
+      title: "Vision Guard",
+      tech: ["Python", "YOLOv8", "AI"],
+      description: "AI-powered PPE detection with 24/7 offline operation",
+      link: "https://youtu.be/zSVimLt4yWg",
+      image: "/ppe-detection-safety-monitoring.jpg",
+      icon: Shield,
     },
   ]
 
