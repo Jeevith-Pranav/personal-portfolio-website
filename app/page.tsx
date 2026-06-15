@@ -992,6 +992,7 @@ export default function Portfolio() {
                   { title: "2nd Prize – AUTOwn'24", org: "BITS Pilani", icon: Award },
                   { title: "2nd Prize – Texperia'26", org: "SNS", icon: Award },
                   { title: "2nd Prize – Code Baton Competition", org: "C3, SREC", icon: Code },
+                  { title: "2nd Prize – Circuit Debugging Competition", org: "EEETA, SREC", icon: Code },
                   { title: "2nd Prize – Zonal Badminton Championship", org: "Anna University (2025)", icon: Target },
                   { title: "Shortlisted – Smart India Hackathon", org: "Top 50 teams (2024, 2025)", icon: Rocket },
                   { title: "Shortlisted – Virtual Proof of Concept", org: "Techgium 9th Edition", icon: Lightbulb },
