@@ -570,7 +570,7 @@ export default function Portfolio() {
               {
                 degree: "B.E – Electrical & Electronics Engineering",
                 institution: "Sri Ramakrishna Engineering College",
-                score: "CGPA: 8.27",
+                score: "CGPA: 8.32",
                 period: "2023 – 2027",
                 icon: GraduationCap,
               },
