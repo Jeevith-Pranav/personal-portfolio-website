@@ -450,7 +450,7 @@ export default function Portfolio() {
   className="glass-button group bg-transparent w-full sm:w-auto text-base py-6 sm:py-4 active:scale-95"
 >
   <a
-    href="/resume/Jeevith_Pranav_P_71812303036.pdf"
+    href="/resume/Jeevith_Pranav_2303036_CV.pdf"
     download
     target="_blank"
     rel="noopener noreferrer"
